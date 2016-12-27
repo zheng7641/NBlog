@@ -1,4 +1,4 @@
-package com.zheng.controller;
+package com.zheng.index;
 
 import java.io.IOException;
 
@@ -10,10 +10,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class BlogController {
+public class IndexController {
 
 	@RequestMapping("/index")
-	public void index(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-		request.getRequestDispatcher("/index.html").forward(request, response);
+	public String index(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+//		request.getRequestDispatcher("/WEB-INF/view/index.html").forward(request, response);
+		return "index";
 	}
 }
