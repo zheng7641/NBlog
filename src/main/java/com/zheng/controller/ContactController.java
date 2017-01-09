@@ -1,4 +1,4 @@
-package com.zheng.contact;
+package com.zheng.controller;
 
 public class ContactController {
 

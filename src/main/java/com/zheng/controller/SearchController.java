@@ -1,4 +1,4 @@
-package com.zheng.search;
+package com.zheng.controller;
 
 public class SearchController {
 

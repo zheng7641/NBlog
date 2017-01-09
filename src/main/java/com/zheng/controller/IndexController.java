@@ -1,4 +1,4 @@
-package com.zheng.index;
+package com.zheng.controller;
 
 import java.io.IOException;
 
@@ -7,7 +7,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -15,8 +14,8 @@ public class IndexController {
 
 	
 //	private static final Logger logger = Logger.getLogger(IndexController.class);
-	@RequestMapping("{http}")
-	public String index(@PathVariable("http")String http,HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+	@RequestMapping("index") 
+	public String index(/*@PathVariable("http")String http,*/HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 //		logger.info(http,new Exception());
 		return "index";
 	}

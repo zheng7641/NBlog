@@ -1,4 +1,4 @@
-package com.zheng.about;
+package com.zheng.controller;
 
 public class AboutController {
 
