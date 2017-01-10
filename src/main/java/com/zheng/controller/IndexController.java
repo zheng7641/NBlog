@@ -8,16 +8,18 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping("blog") 
 public class IndexController {
 
 	
 	private static final Logger logger = Logger.getLogger(IndexController.class);
-	@RequestMapping("index") 
-	public String index(/*@PathVariable("http")String http,*/HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-		logger.info("-----index-----");
-		return "index";
+	@RequestMapping("{http}") 
+	public String index(@PathVariable("http")String http,HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+		logger.info("-----"+http+"-----");
+		return "index.jsp";
 	}
 }

@@ -1,12 +1,10 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-	<head>
-		<title>Black &amp; White</title>
-
-		<!-- meta -->
-		<meta charset="UTF-8">
-	    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Black &amp; White</title>
 	    <!-- css -->
 		<link rel="stylesheet" href="../css/bootstrap.min.css">
 		<link rel="stylesheet" href="../css/ionicons.min.css">
@@ -68,7 +66,7 @@
 						<article class="post post-1">
 							<header class="entry-header">
 								<h1 class="entry-title">
-									<a href="single.html">啊Aa啊Adaptive Vs. Responsive Layouts And Optimal Text Readability</a>
+									<a href="single.html">啊adf阿斯顿法师打发打发大法师的法师打发斯蒂芬Adaptive Vs. Responsive Layouts And Optimal Text Readability</a>
 								</h1>
 								<div class="entry-meta">
 									<span class="post-category"><a href="#">Web Design</a></span>
