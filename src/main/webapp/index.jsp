@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -66,7 +67,7 @@
 						<article class="post post-1">
 							<header class="entry-header">
 								<h1 class="entry-title">
-									<a href="single.html">啊adf阿斯顿法师打发打发大法师的法师打发斯蒂芬Adaptive Vs. Responsive Layouts And Optimal Text Readability</a>
+									<a href="single.html">${title}</a>
 								</h1>
 								<div class="entry-meta">
 									<span class="post-category"><a href="#">Web Design</a></span>
