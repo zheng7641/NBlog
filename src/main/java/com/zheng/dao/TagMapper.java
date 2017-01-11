@@ -1,5 +1,7 @@
 package com.zheng.dao;
 
+import java.util.List;
+
 import com.zheng.entity.Tag;
 
 public interface TagMapper {
@@ -11,6 +13,8 @@ public interface TagMapper {
 
     Tag selectByPrimaryKey(Integer tagid);
 
+    List<String> selectListByBlogId(Integer blogid);
+    
     int updateByPrimaryKeySelective(Tag record);
 
     int updateByPrimaryKey(Tag record);

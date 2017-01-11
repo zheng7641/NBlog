@@ -8,6 +8,15 @@
   <sql id="Base_Column_List">
     tagid, tagname
   </sql>
+  
+  <select id="selectListByBlogId" parameterType="java.lang.Integer" resultType="String">
+  	SELECT t.tagname
+  	FROM blog b,tag t,tag_blog tb
+  	WHERE b.blogid = tb.blogid
+  	AND t.tagid = tb.tagid
+  	AND b.blogid=#{blogid}
+  </select>
+  
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

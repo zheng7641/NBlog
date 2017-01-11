@@ -1,72 +1,94 @@
 package com.zheng.entity;
 
+import java.sql.Timestamp;
 import java.util.Date;
+import java.util.List;
 
 public class Blog {
-    private Integer blogid;
+	private Integer blogid;
 
-    private Date createTime;
+	private Timestamp createTime;
 
-    private String title;
+	private String title;
 
-    private String author;
+	private String author;
 
-    private Date updateTime;
+	private Date updateTime;
 
-    private String content;
+	private String content;
 
-    public Integer getBlogid() {
-        return blogid;
-    }
+	private List<String> tag;
 
-    public void setBlogid(Integer blogid) {
-        this.blogid = blogid;
-    }
+	private Integer click;
 
-    public Date getCreateTime() {
-        return createTime;
-    }
+	public Integer getBlogid() {
+		return blogid;
+	}
 
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
+	public void setBlogid(Integer blogid) {
+		this.blogid = blogid;
+	}
 
-    public String getTitle() {
-        return title;
-    }
+	public Timestamp getCreateTime() {
+		return createTime;
+	}
 
-    public void setTitle(String title) {
-        this.title = title == null ? null : title.trim();
-    }
+	public void setCreateTime(Timestamp createTime) {
+		this.createTime = createTime;
+	}
 
-    public String getAuthor() {
-        return author;
-    }
+	public String getTitle() {
+		return title;
+	}
 
-    public void setAuthor(String author) {
-        this.author = author == null ? null : author.trim();
-    }
+	public void setTitle(String title) {
+		this.title = title;
+	}
 
-    public Date getUpdateTime() {
-        return updateTime;
-    }
+	public String getAuthor() {
+		return author;
+	}
 
-    public void setUpdateTime(Date updateTime) {
-        this.updateTime = updateTime;
-    }
+	public void setAuthor(String author) {
+		this.author = author;
+	}
 
-    public String getContent() {
-        return content;
-    }
+	public Date getUpdateTime() {
+		return updateTime;
+	}
 
-    public void setContent(String content) {
-        this.content = content == null ? null : content.trim();
-    }
+	public void setUpdateTime(Date updateTime) {
+		this.updateTime = updateTime;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	public List<String> getTag() {
+		return tag;
+	}
+
+	public void setTag(List<String> tag) {
+		this.tag = tag;
+	}
+
+	public Integer getClick() {
+		return click;
+	}
+
+	public void setClick(Integer click) {
+		this.click = click;
+	}
 
 	@Override
 	public String toString() {
 		return "Blog [blogid=" + blogid + ", createTime=" + createTime + ", title=" + title + ", author=" + author
-				+ ", updateTime=" + updateTime + ", content=" + content + "]";
+				+ ", updateTime=" + updateTime + ", content=" + content + ", tag=" + tag + "]";
 	}
-    
+
 }
