@@ -21,7 +21,7 @@ public class BlogController {
 	@RequestMapping("index") 
 	public String index(ModelMap model){
 		//默认显示三个博客
-		List<Blog> blogList = new ArrayList<Blog>();
+//		List<Blog> blogList = new ArrayList<Blog>();
 		Blog blog = blogService.selectByPrimaryKey(1);
 		model.addAttribute("blog",blog);
 		return "index";
