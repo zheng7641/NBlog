@@ -231,6 +231,11 @@ figure {
 	color: #000;
 }
 
+.entry-content p{
+	max-height: 200px;
+    overflow: hidden;
+}
+
 .post-category,
 .post-date,
 .post-author {
